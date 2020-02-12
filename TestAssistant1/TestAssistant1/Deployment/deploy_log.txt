@@ -1,0 +1,586 @@
+AZ CLI passes minimum version. Current version is 2.0.81
+{
+  "error": null,
+  "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Resources/deployments/deployment_dry_run",
+  "name": "deployment_dry_run",
+  "properties": {
+    "correlationId": "759653cf-6da2-4a90-98ba-feaa3ca34ece",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Web/serverfarms/mychatbot-c3ohtzw",
+            "resourceGroup": "mychatbot",
+            "resourceName": "mychatbot-c3ohtzw",
+            "resourceType": "Microsoft.Web/serverfarms"
+          }
+        ],
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Web/sites/mychatbot-c3ohtzw",
+        "resourceGroup": "mychatbot",
+        "resourceName": "mychatbot-c3ohtzw",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Web/sites/mychatbot-c3ohtzw",
+            "resourceGroup": "mychatbot",
+            "resourceName": "mychatbot-c3ohtzw",
+            "resourceType": "Microsoft.Web/sites"
+          },
+          {
+            "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Insights/components/mychatbot-c3ohtzw",
+            "resourceGroup": "mychatbot",
+            "resourceName": "mychatbot-c3ohtzw",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.BotService/botServices/mychatbot-c3ohtzw",
+        "resourceGroup": "mychatbot",
+        "resourceName": "mychatbot-c3ohtzw",
+        "resourceType": "Microsoft.BotService/botServices"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.CognitiveServices/accounts/mychatbot-luisruntime-c3ohtzw",
+            "resourceGroup": "mychatbot",
+            "resourceName": "mychatbot-luisruntime-c3ohtzw",
+            "resourceType": "Microsoft.CognitiveServices/accounts"
+          }
+        ],
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.CognitiveServices/accounts/mychatbot-luisauthoring-c3ohtzw",
+        "resourceGroup": "mychatbot",
+        "resourceName": "mychatbot-luisauthoring-c3ohtzw",
+        "resourceType": "Microsoft.CognitiveServices/accounts"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Web/Sites/mychatbot-qnahost-c3ohtzw",
+            "resourceGroup": "mychatbot",
+            "resourceName": "mychatbot-qnahost-c3ohtzw",
+            "resourceType": "Microsoft.Web/Sites"
+          },
+          {
+            "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Search/searchServices/mychatbot-search-c3ohtzw",
+            "resourceGroup": "mychatbot",
+            "resourceName": "mychatbot-search-c3ohtzw",
+            "resourceType": "Microsoft.Search/searchServices"
+          },
+          {
+            "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/microsoft.insights/components/mychatbot-c3ohtzw",
+            "resourceGroup": "mychatbot",
+            "resourceName": "mychatbot-c3ohtzw",
+            "resourceType": "microsoft.insights/components"
+          }
+        ],
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.CognitiveServices/accounts/mychatbot-qna-c3ohtzw",
+        "resourceGroup": "mychatbot",
+        "resourceName": "mychatbot-qna-c3ohtzw",
+        "resourceType": "Microsoft.CognitiveServices/accounts"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Web/serverFarms/mychatbot-c3ohtzw",
+            "resourceGroup": "mychatbot",
+            "resourceName": "mychatbot-c3ohtzw",
+            "resourceType": "Microsoft.Web/serverFarms"
+          }
+        ],
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Web/sites/mychatbot-qnahost-c3ohtzw",
+        "resourceGroup": "mychatbot",
+        "resourceName": "mychatbot-qnahost-c3ohtzw",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Web/Sites/mychatbot-qnahost-c3ohtzw",
+            "resourceGroup": "mychatbot",
+            "resourceName": "mychatbot-qnahost-c3ohtzw",
+            "resourceType": "Microsoft.Web/Sites"
+          },
+          {
+            "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Insights/components/mychatbot-c3ohtzw",
+            "resourceGroup": "mychatbot",
+            "resourceName": "mychatbot-c3ohtzw",
+            "resourceType": "Microsoft.Insights/components"
+          },
+          {
+            "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Search/searchServices/mychatbot-search-c3ohtzw",
+            "resourceGroup": "mychatbot",
+            "resourceName": "mychatbot-search-c3ohtzw",
+            "resourceType": "Microsoft.Search/searchServices"
+          },
+          {
+            "actionName": "listAdminKeys",
+            "apiVersion": "2015-08-19",
+            "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Search/searchServices/mychatbot-search-c3ohtzw",
+            "resourceGroup": "mychatbot",
+            "resourceName": "mychatbot-search-c3ohtzw",
+            "resourceType": "Microsoft.Search/searchServices"
+          },
+          {
+            "apiVersion": "2015-05-01",
+            "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Insights/components/mychatbot-c3ohtzw",
+            "resourceGroup": "mychatbot",
+            "resourceName": "mychatbot-c3ohtzw",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Web/sites/mychatbot-qnahost-c3ohtzw/config/appsettings",
+        "resourceGroup": "mychatbot",
+        "resourceName": "mychatbot-qnahost-c3ohtzw/appsettings",
+        "resourceType": "Microsoft.Web/sites/config"
+      }
+    ],
+    "duration": "PT0S",
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputs": null,
+    "parameters": {
+      "appInsightsLocation": {
+        "type": "String",
+        "value": "centralus"
+      },
+      "appInsightsName": {
+        "type": "String",
+        "value": "mychatbot-c3ohtzw"
+      },
+      "appServicePlanName": {
+        "type": "String",
+        "value": "mychatbot-c3ohtzw"
+      },
+      "appServicePlanSku": {
+        "type": "Object",
+        "value": {
+          "name": "S1",
+          "tier": "Standard"
+        }
+      },
+      "botServiceName": {
+        "type": "String",
+        "value": "mychatbot-c3ohtzw"
+      },
+      "botServiceSku": {
+        "type": "String",
+        "value": "S1"
+      },
+      "botWebAppName": {
+        "type": "String",
+        "value": "mychatbot-c3ohtzw"
+      },
+      "contentModeratorLocation": {
+        "type": "String",
+        "value": "centralus"
+      },
+      "contentModeratorName": {
+        "type": "String",
+        "value": "mychatbot-cm-c3ohtzw"
+      },
+      "contentModeratorSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "cosmosDbName": {
+        "type": "String",
+        "value": "mychatbot-c3ohtzw"
+      },
+      "location": {
+        "type": "String",
+        "value": "centralus"
+      },
+      "luisAuthoringLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "luisAuthoringName": {
+        "type": "String",
+        "value": "mychatbot-luisauthoring-c3ohtzw"
+      },
+      "luisAuthoringSku": {
+        "type": "String",
+        "value": "F0"
+      },
+      "luisRuntimeLocation": {
+        "type": "String",
+        "value": "centralus"
+      },
+      "luisRuntimeName": {
+        "type": "String",
+        "value": "mychatbot-luisruntime-c3ohtzw"
+      },
+      "luisRuntimeSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "microsoftAppId": {
+        "type": "String",
+        "value": "4ad3ed94-cbab-4317-ad9e-5edb1b9a23ad"
+      },
+      "microsoftAppPassword": {
+        "type": "String",
+        "value": "Eatlaksa12!"
+      },
+      "name": {
+        "type": "String",
+        "value": "mychatbot"
+      },
+      "qnaMakerSearchLocation": {
+        "type": "String",
+        "value": "centralus"
+      },
+      "qnaMakerSearchName": {
+        "type": "String",
+        "value": "mychatbot-search-c3ohtzw"
+      },
+      "qnaMakerSearchSku": {
+        "type": "String",
+        "value": "standard"
+      },
+      "qnaMakerServiceLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "qnaMakerServiceName": {
+        "type": "String",
+        "value": "mychatbot-qna-c3ohtzw"
+      },
+      "qnaMakerServiceSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "qnaMakerWebAppLocation": {
+        "type": "String",
+        "value": "centralus"
+      },
+      "qnaMakerWebAppName": {
+        "type": "String",
+        "value": "mychatbot-qnahost-c3ohtzw"
+      },
+      "resourceTagName": {
+        "type": "String",
+        "value": "bot"
+      },
+      "resourceTagValue": {
+        "type": "String",
+        "value": "mychatbot-c3ohtzw"
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "mychatbot-c3ohtzw"
+      },
+      "suffix": {
+        "type": "String",
+        "value": "c3ohtzw"
+      },
+      "useContentModerator": {
+        "type": "Bool",
+        "value": true
+      },
+      "useCosmosDb": {
+        "type": "Bool",
+        "value": true
+      },
+      "useLuisAuthoring": {
+        "type": "Bool",
+        "value": true
+      },
+      "useStorage": {
+        "type": "Bool",
+        "value": true
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Resources",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "deployments"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.DocumentDB",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "centralus"
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Storage",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "centralus"
+            ],
+            "properties": null,
+            "resourceType": "storageAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Web",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "centralus"
+            ],
+            "properties": null,
+            "resourceType": "serverFarms"
+          },
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "centralus"
+            ],
+            "properties": null,
+            "resourceType": "sites"
+          },
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "sites/config"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Insights",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "centralus"
+            ],
+            "properties": null,
+            "resourceType": "components"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.BotService",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "global"
+            ],
+            "properties": null,
+            "resourceType": "botServices"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.CognitiveServices",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "centralus",
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "accounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Search",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "centralus"
+            ],
+            "properties": null,
+            "resourceType": "searchServices"
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "template": null,
+    "templateHash": "2763176848692134897",
+    "templateLink": null,
+    "timestamp": "2020-02-12T06:48:06.751729+00:00",
+    "validatedResources": [
+      {
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Resources/deployments/3822b5f4-d098-4b57-9ee6-3bee686aec4c",
+        "resourceGroup": "mychatbot"
+      },
+      {
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.DocumentDB/databaseAccounts/mychatbot-c3ohtzw",
+        "resourceGroup": "mychatbot"
+      },
+      {
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Storage/storageAccounts/mychatbotc3ohtzw",
+        "resourceGroup": "mychatbot"
+      },
+      {
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Web/serverFarms/mychatbot-c3ohtzw",
+        "resourceGroup": "mychatbot"
+      },
+      {
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Insights/components/mychatbot-c3ohtzw",
+        "resourceGroup": "mychatbot"
+      },
+      {
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Web/sites/mychatbot-c3ohtzw",
+        "resourceGroup": "mychatbot"
+      },
+      {
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.BotService/botServices/mychatbot-c3ohtzw",
+        "resourceGroup": "mychatbot"
+      },
+      {
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.CognitiveServices/accounts/mychatbot-cm-c3ohtzw",
+        "resourceGroup": "mychatbot"
+      },
+      {
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.CognitiveServices/accounts/mychatbot-luisruntime-c3ohtzw",
+        "resourceGroup": "mychatbot"
+      },
+      {
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.CognitiveServices/accounts/mychatbot-luisauthoring-c3ohtzw",
+        "resourceGroup": "mychatbot"
+      },
+      {
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.CognitiveServices/accounts/mychatbot-qna-c3ohtzw",
+        "resourceGroup": "mychatbot"
+      },
+      {
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Search/searchServices/mychatbot-search-c3ohtzw",
+        "resourceGroup": "mychatbot"
+      },
+      {
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Web/sites/mychatbot-qnahost-c3ohtzw",
+        "resourceGroup": "mychatbot"
+      },
+      {
+        "id": "/subscriptions/e9e791ad-4d72-450b-9c0e-8b4c7240c6ab/resourceGroups/mychatbot/providers/Microsoft.Web/sites/mychatbot-qnahost-c3ohtzw/config/appsettings",
+        "resourceGroup": "mychatbot"
+      }
+    ]
+  },
+  "resourceGroup": "mychatbot",
+  "type": "Microsoft.Resources/deployments"
+}
+{
+  "applicationInsights": {
+    "type": "Object",
+    "value": {
+      "InstrumentationKey": "b1627780-8d6f-40cc-8436-0c45ec2a5812"
+    }
+  },
+  "blobStorage": {
+    "type": "Object",
+    "value": {
+      "connectionString": "DefaultEndpointsProtocol=https;AccountName=mychatbotc3ohtzw;AccountKey=apZ878zU61shwvb0KzzAr3SctDGMBMfpLDm0Jcszl/Qft3HXRgi5nvkN74Upq4bCi8HNx8hSSGEZaXgXaNeyjw==;EndpointSuffix=core.windows.net",
+      "container": "transcripts"
+    }
+  },
+  "botWebAppName": {
+    "type": "String",
+    "value": "mychatbot-c3ohtzw"
+  },
+  "contentModerator": {
+    "type": "Object",
+    "value": {
+      "key": "0e752dd6e6754f73ad8ea62701810314"
+    }
+  },
+  "cosmosDb": {
+    "type": "Object",
+    "value": {
+      "authKey": "bhehpNfkcuG1VrZNs0pVJrpOnkVaC0w0z1PNkJ6wpg3efF9U0Bpchb6nnmz5EegU0IHEcV34jKg6UvKJVYdnBQ==",
+      "collectionId": "botstate-collection",
+      "cosmosDBEndpoint": "https://mychatbot-c3ohtzw.documents.azure.com:443/",
+      "databaseId": "botstate-db"
+    }
+  },
+  "luis": {
+    "type": "Object",
+    "value": {
+      "accountName": "mychatbot-luisruntime-c3ohtzw",
+      "authoringKey": "12f6b24748bb400fa929802537725338",
+      "authoringRegion": "westus",
+      "key": "ad8670cea0d048bbb8b9368236b1c891",
+      "region": "centralus"
+    }
+  },
+  "qnaMaker": {
+    "type": "Object",
+    "value": {
+      "endpoint": "https://mychatbot-qnahost-c3ohtzw.azurewebsites.net",
+      "key": "82db008f698a4b6daecaa84c86e3270f"
+    }
+  },
+  "resourceGroupName": {
+    "type": "String",
+    "value": "mychatbot"
+  }
+}

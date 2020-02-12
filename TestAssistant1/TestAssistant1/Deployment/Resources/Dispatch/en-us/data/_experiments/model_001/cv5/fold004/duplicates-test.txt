@@ -1,0 +1,3 @@
+Utterance	Intents
+that is right	l_General, q_Chitchat
+great	l_General, q_Chitchat

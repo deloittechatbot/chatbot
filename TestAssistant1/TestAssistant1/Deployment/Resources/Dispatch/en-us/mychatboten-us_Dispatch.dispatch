@@ -1,0 +1,50 @@
+{
+  "authoringRegion": "westus",
+  "culture": "en-us",
+  "hierarchical": true,
+  "useAllTrainingData": false,
+  "dontReviseUtterance": false,
+  "copyLuisData": true,
+  "normalizeDiacritics": true,
+  "services": [
+    {
+      "intentName": "l_General",
+      "appId": "7dd6a416-3487-4355-8b05-5993949ecf15",
+      "authoringKey": "12f6b24748bb400fa929802537725338",
+      "version": "0.1",
+      "region": "westus",
+      "type": "luis",
+      "name": "mychatboten-us_General",
+      "id": "1"
+    },
+    {
+      "intentName": "q_Chitchat",
+      "includePrompts": true,
+      "kbId": "9c2fef8e-1a8f-4f25-840d-d21d5da969d4",
+      "subscriptionKey": "82db008f698a4b6daecaa84c86e3270f",
+      "type": "qna",
+      "name": "Chitchat",
+      "id": "2"
+    },
+    {
+      "intentName": "q_Faq",
+      "includePrompts": true,
+      "kbId": "0cf678e1-012a-4a49-abcc-10971e657191",
+      "subscriptionKey": "82db008f698a4b6daecaa84c86e3270f",
+      "type": "qna",
+      "name": "Faq",
+      "id": "3"
+    }
+  ],
+  "serviceIds": [
+    "1",
+    "2",
+    "3"
+  ],
+  "appId": "06cef53a-1358-42f5-a997-eba889cc8b58",
+  "authoringKey": "12f6b24748bb400fa929802537725338",
+  "version": "Dispatch",
+  "region": "westus",
+  "type": "dispatch",
+  "name": "mychatboten-us_Dispatch"
+}
